@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quick Meal Helper</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app">
+    <h1>Quick Meal Helper</h1>
+
+    <!-- Ingredient Input -->
+    <input type="text" id="ingredientInput" placeholder="Enter an ingredient" />
+
+    <!-- Mood Selector -->
+    <select id="moodSelector">
+      <option value="">Select a Mood</option>
+      <option value="spicy">Spicy</option>
+      <option value="comfort">Comfort Food</option>
+      <option value="healthy">Healthy</option>
+      <!-- Add more options as needed -->
+    </select>
+
+    <!-- Time Filter -->
+    <select id="timeSelector">
+      <option value="">Select Time</option>
+      <option value="under 15">Under 15 minutes</option>
+      <option value="under 30">Under 30 minutes</option>
+      <option value="under 60">Under 60 minutes</option>
+    </select>
+
+    <!-- Don't Want Filter -->
+    <input type="text" id="avoidInput" placeholder="Avoid ingredients (e.g., dairy, gluten)" />
+
+    <!-- Search Button -->
+    <button id="searchBtn">Find Recipe</button>
+
+    <!-- Recipe Suggestions -->
+    <div id="recipeResults"></div>
+
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
